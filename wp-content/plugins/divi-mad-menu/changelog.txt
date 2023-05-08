@@ -1,0 +1,413 @@
+// Divi MadMenu Changelog
+
+
+v1.9.1 (10.07.2022)
+
+-- New: added the "Placeholder Text" setting to the MadMenu module Search element allowing to set a custom placeholder text for the header search field.
+-- Fix: fixed the MadMenu module mobile menu height being calculated incorrectly in certain cases when one of the "Slide" options selected for the collapsed submenus.
+-- Fix: fixed the word break issue for the mobile menu and the vertical menu links.
+
+Files changed:
+
+-- scripts/frontend-bundle.min.js
+-- scripts/builder-bundle.min.js
+-- styles/style-dbp.min.css
+-- styles/style.min.css
+-- includes/modules/MadMenu/Search.php
+
+
+v1.9.0 (07.06.2022)
+
+-- New: added a new module - MadMenu Vertical Menu - for creating vertical navigations.
+
+Files changed:
+
+-- includes/helper.php
+-- includes/StyleProcessor.php
+-- includes/modules/Vertical/Vertical.php
+-- scripts/frontend-bundle.min.js
+-- scripts/builder-bundle.min.js
+-- styles/style-dbp.min.css
+-- styles/style.min.css
+
+
+v1.8.3 (30.04.2022)
+
+-- Fix: fixed the plugin updater conflicting with Divi's core updater.
+-- Fix: error in Divi Theme Builder when a popup's secondary toggle is clicked.
+-- Fix: popup offset calculated incorrectly on scroll in Divi Builder for the "Center Left", "Center" and "Center Right" popup positions combined with the "Slide Out Top" animation.
+-- Change: removed the blue colored background for the module in the modules modal in Divi Builder to keep it inline with Divi design guidelines.
+-- Change: changed the module generic icon to Divi MadMenu logo in the modules modal in Divi Builder.
+
+Files changed:
+
+-- divi-mad-menu.php
+-- admin/includes/admin.php
+-- includes/functions.php
+-- scripts/builder-bundle.min.js
+-- styles/style-dbp.min.css
+-- styles/style.min.css
+-- updater/licensing.php
+
+
+v1.8.2 (18.03.2022)
+
+-- Improvement: enabled support for the new Background Pattern and Background Mask features introduced in Divi v4.15.
+
+Files Changed:
+
+-- includes/modules/MadMenu/MadMenu.php
+-- scripts/frontend-bundle.min.js
+-- scripts/builder-bundle.min.js
+-- styles/style-dbp.min.css
+-- styles/style.min.css
+
+
+v1.8.1 (16.03.2022)
+
+-- Fix: fixed the popup selector issue with custom post types.
+-- Fix: fixed the Divi Builder error happening with the Divi Builder Plugin when the "Top(No Content Overlap)" option selected for the fixed header.
+-- Fix: fixed compatibility issue with PHP 7.2 .
+
+Files Changed:
+
+-- includes/helper.php
+-- includes/popups.php
+-- includes/modules/MadMenu/Button.php
+-- includes/modules/MadMenu/MobileMenu.php
+-- scripts/builder-bundle.min.js
+
+
+v1.8.0 (08.02.2022)
+
+-- New: Added the "Slide Right" and "Slide Left" options for the mobile menu collapsed submenus which allow the submenus to slide in from right/left when clicking the parent item arrow.
+
+Files Changed:
+
+-- includes/helper.php
+-- includes/modules/MadMenu/MadMenu.php
+-- includes/modules/MadMenu/MenuWrapper.php
+-- includes/modules/MadMenu/MobileMenu.php
+-- includes/modules/MadMenu/MobileMenuWrapper.php
+-- includes/class-walker-nav-menu.php
+-- scripts/frontend-bundle.min.js
+-- scripts/builder-bundle.min.js
+-- styles/style-dbp.min.css
+-- styles/style.min.css
+
+
+v1.7.5 (03.12.2021)
+
+-- Fix: Top & Center aligned popup issues with the Slide In/Out animations.
+-- Fix: conditional rendering of header elements in VB not working properly when the Hover view mode enabled.
+
+Files Changed:
+
+-- includes/popups.php
+-- scripts/frontend-bundle.min.js
+-- scripts/builder-bundle.min.js
+
+
+v1.7.4 (16.11.2021)
+
+-- Improvement: improved compatibility with the Divi v4.13 (Icons Update).
+-- New: enabled the hover option for the Button elements font icon selection setting.
+
+Files Changed:
+
+-- includes/helper.php
+-- includes/modules/MadMenu/Button.php
+-- includes/modules/MadMenu/Button.php
+-- scripts/builder-bundle.min.js
+
+
+v1.7.3 (06.11.2021)
+
+-- Improvement: improved compatibility with the Divi v4.13 (Icons Update).
+-- Fix: fixed the issue with the FontAwesome icons not displaying for the Button element(both on frontend and in Divi Builder).
+
+Files Changed:
+
+-- includes/helper.php
+-- includes/modules/MadMenu/Button.php
+-- scripts/frontend-bundle.min.js
+-- scripts/builder-bundle.min.js
+
+
+v1.7.2 (04.11.2021)
+
+-- Improvement: improved compatibility with the Divi v4.12 (Full Site Front-End Editing).
+-- Fix: fixed the issue with the fixed header and popups top offsets when WP admin bar is showing(both on frontend and in Divi Builder).
+-- Fix: fixed the issue with the popup overlay z-index in Page Builder.
+
+Files Changed:
+
+-- scripts/frontend-bundle.min.js
+-- scripts/builder-bundle.min.js
+
+
+v1.7.1 (10.09.2021)
+
+-- Improvement: improved PHP8 compatibility.
+-- Fix: fixed an issue causing the header popups break on 404 and Search Results pages.
+-- Fix: the mobile dropdown menu closing on outside click, placement and alignment features were not working correctly in VB with the "Top(No Content Overlap)" option selected for the fixed header.
+
+Files Changed:
+
+-- includes/popups.php
+-- includes/modules/MadMenu/MadMenu.php
+-- includes/modules/MadMenu/DesktopMenu.php
+-- includes/modules/MadMenu/MobileMenu.php
+-- includes/modules/MadMenu/Button.php
+-- scripts/builder-bundle.min.js
+
+
+v1.7 (24.08.2021)
+
+-- Improvement: various UI changes
+  - Decreased the number of design settings sections under the Design tab by 15 in total by moving all "Fixed" header design settings from the settings sections with the (Fixed) label into the "Fixed" tab of the corresponding element's design settings section. This made the Design settings pane look much less crowded.
+  - Moved the Mobile Menu element's layout settings from the Design->Layout:Elements->M tab into a separate tab labeled "MM"(which stays for "Mobile Menu") in Design->Layout:Elements section.
+  - Renamed the Design->Layout:Elements->M tab to "DM"(which stays for "Desktop Menu") as it contains only the Desktop Menu element's layout settings from now on.
+  - Moved the elements' fixed header layout settings from the Design->Layout:Elements(Fixed) section into the Design->Layout:Elements section to have them all in one place for each element.
+  - Removed the "Main:" word from the main module design settings section labels for consistency with Divi's core modules.
+
+Files Changed:
+
+-- includes/helper.php
+-- includes/modules/MadMenu/MadMenu.php
+-- includes/modules/MadMenu/MenuWrapper.php
+-- includes/modules/MadMenu/DesktopMenu.php
+-- includes/modules/MadMenu/MobileMenuWrapper.php
+-- includes/modules/MadMenu/MenuToggle.php
+-- includes/modules/MadMenu/MobileMenu.php
+-- includes/modules/MadMenu/Logo.php
+-- includes/modules/MadMenu/Cart.php
+-- includes/modules/MadMenu/Search.php
+-- includes/modules/MadMenu/Button.php
+
+
+v1.6.2 (06.07.2021)
+
+-- Fix: fixed the popups not working on some of the WooCommerce pages.
+
+Files Changed:
+
+-- includes/helper.php
+-- includes/popups.php
+-- includes/modules/MadMenu/Button.php
+
+
+v1.6.1 (04.07.2021)
+
+-- Fix: fixed the popup location issue occuring when the right aligned popup is set the "Slide Out Right" closing animation.
+
+Files Changed:
+
+-- includes/popups.php
+
+
+v1.6 (01.07.2021)
+
+-- New: Added the "Header Popups" feature to the MadMenu Button elements.
+-- Fix: fixed the Fixed menu bottom offset being calculated incorrectly in Theme Builder.
+-- Fix: fixed the Button Two element's image icon width setting label typo (from "Button One Image Width" to "Button Two Image Width").
+-- Fix: fixed the "Fade Out Top" animation @keyframes.
+-- Fix: increased the Mobile Menu Toggle z-index value to prevent it from being overlapped by the mobile dropdown menu when it's top offset is decreased.
+
+Files Changed:
+
+-- divi-mad-menu.php
+-- includes/popups.php
+-- includes/helper.php
+-- includes/modules/MadMenu/MadMenu.php
+-- includes/modules/MadMenu/Button.php
+-- scripts/builder-bundle.min.js
+-- scripts/frontend-bundle.min.js
+-- styles/style-dbp.min.css
+-- styles/style.min.css
+
+
+v1.5.1 (16.03.2021)
+
+-- Improvement: updated the plugin updater to the latest version.
+-- Fix: fixed the JS error in Divi Builder occuring when the mobile menus responsive settings enabled but the mobile menus are not set for all devices.
+
+Files Changed:
+
+-- updater/licensing.php
+-- updater/plugin-updater.php
+-- scripts/builder-bundle.min.js
+
+
+v1.5 (07.03.2021)
+
+-- New: Added the "Authenticated User Content" feature for the Button elements allowing to use different button content for logged in and logged out users(eg. create Login/Logout buttons).
+
+Files Changed:
+
+-- includes/DiviMadMenu.php
+-- includes/modules/MadMenu/MadMenu.php
+-- includes/modules/MadMenu/Button.php
+-- scripts/builder-bundle.min.js
+
+
+v1.4 (31.01.2021)
+
+-- New: Added the "Close On Outside Click" feature for the mobile menu (Content->Mobile Menu).
+-- New: Added the "Dropdown Menu Placement" feature (Content->Mobile Menu) providing an option to "attach" the dropdown menu to the Mobile Menu Toggle(the hamburger) rather than always having it in the middle of the header.
+-- New: Added the mobile dropdown menu alignment and min-width settings (Design->Mobile Menu).
+-- Fix: fixed the mobile menu display issue in Firefox.
+
+Files Changed:
+
+-- includes/modules/MadMenu/MobileMenu.php
+-- includes/modules/MadMenu/MobileMenuWrapper.php
+-- scripts/builder-bundle.min.js
+-- scripts/frontend-bundle.min.js
+-- styles/style-dbp.min.css
+-- styles/style.min.css
+
+
+v1.3.5 (25.12.2020)
+
+-- Fix: fixed the Cart icon and contents hover color issues.
+-- Fix: fixed transition issues.
+-- Fix: fixed the desktop menu active menu item color and background color not being applied on frontend.
+-- Fix: fixed the desktop menu submenus not getting hidden immediately on mouseleave.
+
+Files Changed:
+
+-- includes/functions.php
+-- includes/modules/MadMenu/MadMenu.php
+-- includes/modules/MadMenu/MenuWrapper.php
+-- includes/modules/MadMenu/DesktopMenu.php
+-- includes/modules/MadMenu/Button.php
+-- includes/modules/MadMenu/Cart.php
+-- scripts/builder-bundle.min.js
+-- styles/style-dbp.min.css
+-- styles/style.min.css
+
+
+v1.3.4 (11.12.2020)
+
+-- Improvement: compatibility with WordPress v5.6
+-- Improvement: performance improvements.
+-- Fix: fixed the dropdown direction not being set in some cases in VB.
+-- Fix: fixed minor issues with the conditional rendering of the Cart element contents and the Desktop and Mobile Menu elements in VB.
+-- Fix: fixed the module overflow issue.
+-- Fix: toggling the collapsed mobile menu submenus was not working in VB in certain cases.
+
+Files Changed:
+
+-- includes/DiviMadMenu.php
+-- includes/functions.php
+-- includes/modules/MadMenu/MadMenu.php
+-- scripts/builder-bundle.min.js
+-- scripts/frontend-bundle.min.js
+
+
+v1.3.3 (23.11.2020)
+
+-- Improvement: updated the Desktop and Mobile Menu Breakpoints feature to support the Divi Builder's new Responsive Previews feature introduced in v4.7.
+-- Fix: fixed the Button and Mobile Menu Toggle padding issue in DB Plugin.
+-- Fix: fixed the Search element font icon visibility and line height issues in DB Plugin.
+-- Fix: fixed the Button, Cart and Search elements image icon visibility issue in DB Plugin where both the normal and the fixed header image icons were visible at the same time.
+-- Fix: fixed the issue with parent menu items arrow icon not being shown in the Storefront theme.
+
+Files Changed:
+-- includes/modules/MadMenu/MadMenu.php
+-- includes/modules/MadMenu/Button.php
+-- includes/modules/MadMenu/MenuToggle.php
+-- includes/modules/MadMenu/InnerContainer.php
+-- scripts/builder-bundle.min.js
+-- styles/style-dbp.min.css
+-- styles/style.min.css
+
+
+v1.3.2 (09.11.2020)
+
+-- Fix: fixed the Outlines feature not working in the DB Plugin.
+-- Fix: the fixed header height was being calculated incorrectly in DB Plugin in certain cases.
+-- Fix: the "Fixed(No Content Overlap)" option of the fixed header was not functioning correctly in certain cases(the page content wasn't being pushed down).
+-- Fix: the fixed-to-top header was being clipped in older versions of Safari browser when the "Fixed(No Content Overlap)" option selected and the page contained animated elements.
+-- Fix: adjusted the fixed header trigger position in DB Plugin.
+-- Fix: fixed the dropdown direction "Auto" option not working in Page Builder.
+
+Files Changed:
+-- scripts/builder-bundle.min.js
+-- scripts/frontend-bundle.min.js
+-- styles/style-dbp.min.css
+-- styles/style.min.css
+
+
+v1.3.1 (04.11.2020)
+
+-- Fix: applied minor fixes to the Cart element.
+-- Fix: fixed the broken CSS selectors issue in Theme Builder.
+-- Fix: fixed the transition issue causing the desktop submenus flickering on hovering over the parent menu item in older versions of Safari browser. 
+
+Files changed:
+-- includes/modules/MadMenu/Cart.php
+-- includes/functions.php
+-- scripts/builder-bundle.min.js
+-- styles/style-dbp.min.css
+-- styles/style.min.css
+
+
+v1.3 (07.10.2020)
+
+-- New: Added the Cart Contents functionality allowing to display the items count and total amount of the cart next to the cart icon with the option to enable the live update of the cart contents using AJAX.
+-- Fix: The 'ETmodules' font is now being applied to the Search and Cart elements only when the font icon is selected as the icon type.
+-- Fix: fixed the top offset not being applied to the desktop menu first level submenus in the Divi Builder in certain cases.
+-- Fix: fixed the issue with the Fixed Header state not being triggered correctly in Divi Builder in certain cases.
+-- Fix: fixed the mobile menu items Text Alignment field conditional visibility issue.
+
+
+v1.2 (05.09.2020)
+
+-- New: Added new animations for the Mobile Menu dropdown - 20 animation choices available now both for opening and closing the mobile menu, with the possibility to control the animations duration.
+-- New: extended the existing animations options list of the Desktop Menu submenus from 5 to 19 animation options, and also added the animation duration setting. 
+
+
+v1.1.3 (31.08.2020)
+
+-- Fix: fixed the issue with clicking the mobile menu toggle(hamburger menu) when the module link url is added.
+-- Fix(IMPORTANT): disabled the recently introduced Sticky options (Divi v4.6) due to functionality similarities with the Divi MadMenu's Fixed Header mechanism which causes multiple conflicts and creates confusion.
+
+
+v1.1.2 (13.08.2020)
+
+-- Fix: fixed the mobile dropdown menu overflow issue making it impossible to set a max-height.
+
+
+v1.1.1 (04.08.2020)
+
+-- Improvement: improved the mobile dropdown offset feature by adding the Mobile Menu Bottom Offset setting for setting the bottom offset of the dropdown menu expanding upwards.
+-- Fix: fixed the Mobile Menu Top Offset feature conflict with the "auto" and "upwards" options of the Dropdown Direction setting.
+-- Fix: fixed a hovering issue with desktop menu items.
+
+
+v1.1 (03.08.2020)
+
+-- New: added the mobile menu and mobile submenu text alignment options.
+-- Fix: fixed the Search and Cart elements' issue with the border not being added when the Solid border style selected.
+-- Fix: fixed the mobile menu toggle label text font weight issue.
+-- Fix: fixed the search input field placeholder color not being applied.
+-- Fix: fixed the z-index issue of the mobile menu and the desktop submenu when both enabled on desktop.
+
+
+v1.0 (27.07.2020)
+
+-- Initial release.
+-- New: added the Mobile Menu Top Offset setting to control the mobile dropdown menu top offset.
+-- Improvement: changed the way the elements' responsive visibility is handled.
+-- Fix: fixed flexbox layout issue in IE 11.
+-- Fix: fixed incorrect default values for some settings.
+-- Fix: fixed the CSS priority issue with the main and submenu items.
+-- Fix: fixed conditional visibility issues with some settings.
+-- Fix: fixed descriptions of some settings.
+
+
+v0.1 (06.07.2020)
+
+-- Beta-1 release.

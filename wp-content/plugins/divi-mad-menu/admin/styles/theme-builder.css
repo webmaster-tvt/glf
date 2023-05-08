@@ -1,0 +1,10 @@
+/* module styles(in TB modules list modal) - @since v1.8.3 */
+.et-db #et-boc .et-l .et-fb-modules-list li.dvmmv_madmenu_vertical .et-fb-icon,
+.et-fb-modules-list li.dvmmv_madmenu_vertical .et-fb-icon,
+.et-db #et-boc .et-l .et-fb-modules-list li.dvmm_mad_menu .et-fb-icon,
+.et-fb-modules-list li.dvmm_mad_menu .et-fb-icon {
+    width: 17px !important;
+    min-width: 17px !important;
+    height: 17px !important;
+    margin: 0 auto 4px !important;
+}

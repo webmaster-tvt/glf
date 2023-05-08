@@ -1,0 +1,333 @@
+/**
+ * Resets
+ */
+#dvmm-panel span,
+#dvmm-panel applet,
+#dvmm-panel object,
+#dvmm-panel iframe,
+#dvmm-panel h1,
+#dvmm-panel h2,
+#dvmm-panel h3,
+#dvmm-panel h4,
+#dvmm-panel h5,
+#dvmm-panel h6,
+#dvmm-panel p,
+#dvmm-panel blockquote,
+#dvmm-panel a,
+#dvmm-panel abbr,
+#dvmm-panel acronym,
+#dvmm-panel address,
+#dvmm-panel big,
+#dvmm-panel cite,
+#dvmm-panel code,
+#dvmm-panel del,
+#dvmm-panel dfn,
+#dvmm-panel font,
+#dvmm-panel img,
+#dvmm-panel ins,
+#dvmm-panel kbd,
+#dvmm-panel q,
+#dvmm-panel s,
+#dvmm-panel samp,
+#dvmm-panel small,
+#dvmm-panel strike,
+#dvmm-panel strong,
+#dvmm-panel tt,
+#dvmm-panel var,
+#dvmm-panel fieldset,
+#dvmm-panel dl,
+#dvmm-panel dt,
+#dvmm-panel dd,
+#dvmm-panel ol,
+#dvmm-panel ul,
+#dvmm-panel li,
+#dvmm-panel form,
+#dvmm-panel label,
+#dvmm-panel legend,
+#dvmm-panel table,
+#dvmm-panel caption,
+#dvmm-panel tbody,
+#dvmm-panel tfoot,
+#dvmm-panel thead,
+#dvmm-panel tr,
+#dvmm-panel th,
+#dvmm-panel td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#dvmm-panel pre,
+#dvmm-panel sub,
+#dvmm-panel sup,
+#dvmm-panel em {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#dvmm-panel button {
+    box-shadow: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* remember to define focus styles! */
+#dvmm-panel :focus {
+    outline: 0;
+}
+
+#dvmm-panel ol, #dvmm-panel ul {
+    list-style: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#dvmm-panel a {
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/**
+* Main Wrappers
+*/
+#panel-wrap, #custom-lbox {
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#wrapper {
+    margin: 30px 30px 0 20px;
+}
+
+#dvmm-panel {
+    background: white;
+    border: none;
+    box-shadow: 0 5px 30px rgba(0,0,0,.1);
+    border-radius: 3px;
+    color: #32373c;
+}
+
+/**
+* Header
+*/
+#dvmm-panel-header {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    background: #0757e5;
+    padding: 14px 26px;
+    line-height: .8;
+    position: relative;
+    border-radius: 3px 3px 0 0;
+}
+
+#dvmm-panel-header .dvmm-logo {
+    max-width: 30px;
+}
+
+h1#dvmm-panel-title {
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background-color: #0757e5;
+    border-bottom: 0px;
+    line-height: 18px;
+    margin-bottom: 0px;
+    position: relative;
+    padding-left: 11px;
+}
+
+#dvmm-panel-mainmenu {
+    background-color: #065ff8;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+#dvmm-panel-mainmenu li {
+    float: left;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+#dvmm-panel-mainmenu li > a,
+#dvmm-panel-mainmenu li.ui-state-active a {
+    background-color: #1d70ff;
+}
+
+#dvmm-panel-mainmenu a {
+    box-sizing: border-box;
+    color: white;
+    padding: 13px 26px;
+    display: inline-block;
+    transition: all 0.3s;
+    outline: 0;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+#dvmm-panel a {
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.dvmm_tab_content {
+    padding: 30px;
+}
+
+.dvmm_tab_content .dvmm_content_box {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.dvmm_tab_content .dvmm_option_title {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 10px 0px 10px 0;
+    position: relative;
+}
+
+#dvmm-panel .dvmm_tab_content .dvmm_option_title h3 {
+    word-wrap: break-word;
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color: #32373c;
+}
+
+.dvmm_tab_content .dvmm_option_content {
+    display: inline-block;
+    width: 65%;
+    padding: 0 0 0 30px;
+    box-sizing: border-box;
+}
+
+.dvmm_tab_content .dvmm_option_content input[type="password"],
+.dvmm_tab_content .dvmm_option_content input[type="text"] {
+    height: 30px;
+    margin-left: 0;
+    border-radius: 3px;
+    border: none;
+    box-shadow: none;
+    background: #F1F5F9;
+    padding: 4px 13px;
+    font-size: 13px;
+    line-height: 1;
+    color: #4c5866;
+    height: auto;
+    width: auto;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    margin-bottom: 0;
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    transition: background .5s;
+    font-weight: 600;
+}
+
+.dvmm_tab_content .dvmm_option_content input[type="text"]:focus, 
+.dvmm_tab_content .dvmm_option_content input[type="password"]:focus, 
+.dvmm_tab_content .dvmm_option_content textarea:focus {
+    background: #e6ecf2;
+}
+
+.dvmm_updates_bottom,
+.dvmm_option_content.dvmm_activate_license,
+.dvmm_license_active {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.dvmm_license_active {
+    color: #509850;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-right: 7px;
+    background: rgba(157, 255, 157, 0.27);
+    border-radius: 3px;
+}
+
+.dvmm_option_content .button-secondary {
+    box-sizing: border-box;
+    color: #FFF;
+    background-color: #4c5866;
+    padding: 0 20px;
+    margin: 0;
+    font-size: 12px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 30px;
+    margin-right: 0;
+    margin-left: 0;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+    text-shadow: none;
+    -webkit-transition: background .5s;
+    transition: background .5s;
+}
+
+.dvmm_option_content .button-secondary:hover,
+.dvmm_option_content .button-secondary:focus {
+    background: #343c46;
+    background: #343c46;
+    border-color: unset;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+}
+
+#dvmm-panel-bottom {
+    padding-top: 30px;
+}
+
+#dvmm-panel-bottom input.button {
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    transition: background .5s;
+    color: #FFF;
+    cursor: pointer;
+    background-color: #00C3AA;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-decoration: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+}
